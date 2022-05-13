@@ -20,6 +20,5 @@ response = cloudns_api.record.create(domain_name='stormycloud.org', host=(f"{arg
 
 response = cloudns_api.record.create(domain_name='248.128.23.in-addr.arpa', host=(f"{args.ip}"), record_type='PTR', record=(f"{args.hostname}.stormycloud.org"), ttl=3600)
 
-#response = cloudns_api.record.create(domain_name='0.0.5.0.c.f.2.0.6.2.ip6.arpa', host=(f"{args.ipv6_ptr}.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0"), record_type='PTR', record=(f"{args.hostname}.stormyc>
-
+response = cloudns_api.record.create(domain_name='0.0.5.0.c.f.2.0.6.2.ip6.arpa', host=(f"{args.ipv6_ptr}.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0"), record_type='PTR', record=(f"{args.hostname}.stormycloud.org"), ttl=3600)
 print(response.json())
